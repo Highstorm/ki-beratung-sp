@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --light: #F8FAFC;
+  --light2: #F1F5F9;
+  --light3: #E2E8F0;
+  --accent: #A3E635;
+  --accent2: #65A30D;
+  --accent-hover: #BEF264;
+  --black: #0F172A;
+  --text: rgba(15, 23, 42, 0.85);
+  --text2: #64748B;
+  --text3: #94A3B8;
+  --card-bg: rgba(15, 23, 42, 0.03);
+  --accent-glow: rgba(163, 230, 53, 0.12);
+  --accent-border: rgba(132, 204, 22, 0.19);
+  --accent-border2: rgba(132, 204, 22, 0.30);
+  --accent-border3: rgba(132, 204, 22, 0.25);
+  --pill-bg: rgba(15, 23, 42, 0.05);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-light: var(--light);
+  --color-light2: var(--light2);
+  --color-light3: var(--light3);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent2);
+  --color-accent-hover: var(--accent-hover);
+  --color-black: var(--black);
+  --color-text: var(--text);
+  --color-text2: var(--text2);
+  --color-text3: var(--text3);
+  --color-card-bg: var(--card-bg);
+  --color-accent-glow: var(--accent-glow);
+  --color-accent-border: var(--accent-border);
+  --color-accent-border2: var(--accent-border2);
+  --color-accent-border3: var(--accent-border3);
+  --color-pill-bg: var(--pill-bg);
+  --font-heading: var(--font-montserrat);
+  --font-body: var(--font-roboto);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  font-family: var(--font-body);
 }
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--light2); }
+::-webkit-scrollbar-thumb { background: var(--accent-border2); border-radius: 3px; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.7s ease-out both; }
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
