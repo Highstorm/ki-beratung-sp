@@ -493,15 +493,9 @@ function Footer() {
           <span className="font-heading text-sm font-bold tracking-[2px] text-black">SP</span>
           <span className="font-body text-xs text-text3">&copy; {new Date().getFullYear()} Sebastian Pieper</span>
         </div>
-        <div className="flex items-center gap-4">
-          <a href="https://sebastian-pieper.vercel.app" className="font-body text-xs text-text3 hover:text-text2 transition-colors">
-            CV ansehen
-          </a>
-          <span className="text-text3">|</span>
-          <a href="mailto:seb@stianpieper.de" className="font-body text-xs text-text3 hover:text-text2 transition-colors">
-            seb@stianpieper.de
-          </a>
-        </div>
+        <a href="mailto:seb@stianpieper.de" className="font-body text-xs text-text3 hover:text-text2 transition-colors">
+          seb@stianpieper.de
+        </a>
       </div>
     </footer>
   );
