@@ -106,7 +106,7 @@ function Hero() {
           <p className="animate-fade-up delay-200 font-body text-lg md:text-xl font-light leading-[1.6] text-text max-w-[600px] mb-10">
             Ich helfe Unternehmen und Unternehmern, KI praxisnah einzusetzen —
             von der Strategie über Schulungen bis zur Implementierung von AI-Agents.
-            DSGVO-konform. Messbar. Ohne Buzzword-Bingo.
+            Erste produktive Ergebnisse in 14 Tagen. DSGVO-konform. Ohne Buzzword-Bingo.
           </p>
 
           <div className="animate-fade-up delay-300 flex flex-col sm:flex-row gap-4">
@@ -203,8 +203,8 @@ function Services() {
     {
       icon: Rocket,
       title: "Implementierung & Pilotprojekte",
-      desc: "Vom Konzept zur produktiven Lösung in 90 Tagen. Strukturierte Pilotprojekte mit klarem Scope, messbaren KPIs und einem Blueprint für die unternehmensweite Skalierung.",
-      tags: ["90-Tage-Pilot", "MVP-Entwicklung", "KPI-Tracking", "Skalierungsplan"],
+      desc: "Vom Konzept zur produktiven Lösung in 14 Tagen. Strukturierte Pilotprojekte mit klarem Scope, messbaren KPIs und einem Blueprint für die unternehmensweite Skalierung.",
+      tags: ["14-Tage-Pilot", "MVP-Entwicklung", "KPI-Tracking", "Skalierungsplan"],
     },
     {
       icon: Shield,
@@ -258,9 +258,9 @@ function Services() {
 function Process() {
   const steps = [
     { num: "01", title: "Erstgespräch", desc: "Kostenlos und unverbindlich. Wir sprechen über Ihre Herausforderungen, Ziele und die KI-Reife Ihres Unternehmens.", duration: "30 Min." },
-    { num: "02", title: "Potenzialanalyse", desc: "Ich identifiziere die Top-3-Use-Cases mit dem besten Kosten-Nutzen-Verhältnis und erstelle eine priorisierte Roadmap.", duration: "1–2 Wochen" },
-    { num: "03", title: "Pilot & Training", desc: "Gemeinsam setzen wir den ersten Use Case um. Parallel schulen wir Ihr Team für den eigenständigen Einsatz.", duration: "4–12 Wochen" },
-    { num: "04", title: "Skalierung", desc: "Auf Basis der Ergebnisse rollen wir die Lösung aus und identifizieren weitere Optimierungspotenziale.", duration: "Ongoing" },
+    { num: "02", title: "Potenzialanalyse", desc: "Innerhalb von ein bis zwei Tagen identifiziere ich Ihre Top-Use-Cases, bewerte Aufwand vs. Impact und liefere eine priorisierte Roadmap.", duration: "1–2 Tage" },
+    { num: "03", title: "Pilot & Training", desc: "In zwei Wochen setzen wir den ersten Use Case produktiv um und schulen Ihr Team für den eigenständigen Einsatz.", duration: "14 Tage" },
+    { num: "04", title: "Kontinuierliche Entwicklung", desc: "Nahtloser Übergang in die laufende Begleitung: Optimierung, neue Use Cases, Trend-Scouting — Ihr KI-Sparringspartner.", duration: "Ongoing" },
   ];
 
   return (
@@ -393,7 +393,7 @@ function FAQ() {
     },
     {
       q: "Wie schnell sehen wir erste Ergebnisse?",
-      a: "In der Regel erzielen wir innerhalb der ersten 4–6 Wochen eines Pilotprojekts messbare Ergebnisse. Quick Wins wie KI-gestützte E-Mail-Bearbeitung oder Dokumentenanalyse können oft schon nach wenigen Tagen produktiv sein.",
+      a: "Schnell. Die Potenzialanalyse steht nach 1–2 Tagen, der erste produktive Pilot innerhalb von 14 Tagen. Quick Wins wie KI-gestützte E-Mail-Bearbeitung oder Dokumentenanalyse können oft schon nach wenigen Tagen live sein.",
     },
     {
       q: "Gibt es Fördermöglichkeiten für KI-Projekte?",
