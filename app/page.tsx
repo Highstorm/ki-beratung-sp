@@ -331,32 +331,6 @@ function WhyMe() {
   );
 }
 
-/* ─── Numbers / Social Proof ─── */
-
-function Numbers() {
-  const stats = [
-    { value: "14+", label: "Jahre Erfahrung" },
-    { value: "50+", label: "Projekte umgesetzt" },
-    { value: "5x", label: "Schnellerer Projektfortschritt" },
-    { value: ">90%", label: "Weniger Rollback-Risiko" },
-  ];
-
-  return (
-    <section className="py-16 bg-light2">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map(({ value, label }) => (
-            <div key={label} className="text-center">
-              <span className="font-heading text-[40px] font-extrabold text-accent2">{value}</span>
-              <p className="font-body text-sm text-text2 mt-1">{label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 /* ─── FAQ ─── */
 
 function FaqItem({ q, a }: { q: string; a: string }) {
@@ -512,7 +486,6 @@ export default function Home() {
       <Services />
       <Process />
       <WhyMe />
-      <Numbers />
       <FAQ />
       <Contact />
       <Footer />
