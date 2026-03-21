@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# AI Agent Discovery
+# llms.txt: https://ki-beratung.vercel.app/llms.txt
+# agent.json: https://ki-beratung.vercel.app/.well-known/agent.json
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://ki-beratung.vercel.app/sitemap.xml

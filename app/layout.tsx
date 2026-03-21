@@ -25,6 +25,35 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "KI-Beratung Sebastian Pieper",
+  url: "https://ki-beratung.vercel.app",
+  description:
+    "Praxisnahe KI-Beratung für den deutschen Mittelstand — Strategie, Workshops, Implementierung und laufende Begleitung.",
+  provider: {
+    "@type": "Person",
+    name: "Sebastian Pieper",
+    url: "https://sebastian-pieper.vercel.app",
+    email: "mail@sebastian-pieper.de",
+    sameAs: ["https://www.linkedin.com/in/sebastian-pieper-selb/"],
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "Germany",
+  },
+  serviceType: [
+    "KI-Strategie",
+    "KI-Workshops",
+    "AI Agents",
+    "KI-Implementierung",
+    "KI-Governance",
+  ],
+  availableLanguage: ["de", "en"],
+  priceRange: "Kostenloses Erstgespräch",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +61,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
         {children}
       </body>
