@@ -59,8 +59,8 @@ export async function submitContactForm(
     return { success: false, message: "Bitte geben Sie eine gültige E-Mail-Adresse ein." };
   }
 
+  // Notion — save to database
   try {
-    // Notion
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
     await notion.pages.create({
       parent: { database_id: process.env.NOTION_DATABASE_ID! },
@@ -73,8 +73,16 @@ export async function submitContactForm(
         Datum: { date: { start: new Date().toISOString().split("T")[0] } },
       },
     });
+  } catch (error) {
+    console.error("Notion error:", error);
+    return {
+      success: false,
+      message: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie mich über LinkedIn.",
+    };
+  }
 
-    // Resend
+  // Resend — send email notification (non-blocking, don't fail form on email error)
+  try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Kontaktformular <onboarding@resend.dev>",
@@ -91,12 +99,10 @@ export async function submitContactForm(
         nachricht,
       ].join("\n"),
     });
-
-    return { success: true, message: "Vielen Dank für Ihre Nachricht! Ich melde mich zeitnah bei Ihnen." };
-  } catch {
-    return {
-      success: false,
-      message: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie mich über LinkedIn.",
-    };
+  } catch (error) {
+    console.error("Resend error:", error);
+    // Don't fail the form — Notion entry was already created
   }
+
+  return { success: true, message: "Vielen Dank für Ihre Nachricht! Ich melde mich zeitnah bei Ihnen." };
 }
