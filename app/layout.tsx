@@ -36,7 +36,7 @@ const jsonLd = {
     "@type": "Person",
     name: "Sebastian Pieper",
     url: "https://sebastian-pieper.vercel.app",
-    email: "mail@sebastian-pieper.de",
+    email: "seb@stianpieper.de",
     sameAs: ["https://www.linkedin.com/in/sebastian-pieper-selb/"],
   },
   areaServed: {

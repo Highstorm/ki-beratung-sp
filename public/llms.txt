@@ -46,12 +46,12 @@ Kontinuierliche Weiterentwicklung Ihrer KI-Initiativen. Regelmäßige Reviews, n
 
 - Website: https://ki-beratung.vercel.app
 - CV: https://sebastian-pieper.vercel.app
-- Email: mail@sebastian-pieper.de
+- Kontaktformular: https://ki-beratung.vercel.app/#kontakt
 - LinkedIn: https://www.linkedin.com/in/sebastian-pieper-selb/
 
 ## Kostenloses Erstgespräch
 
-Buchen Sie ein kostenloses 30-minütiges Erstgespräch per E-Mail an mail@sebastian-pieper.de.
+Nutzen Sie das Kontaktformular unter https://ki-beratung.vercel.app/#kontakt für ein kostenloses 30-minütiges Erstgespräch.
 
 ## Bot Permissions
 

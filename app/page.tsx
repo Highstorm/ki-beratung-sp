@@ -10,7 +10,6 @@ import {
   Workflow,
   CheckCircle2,
   ArrowRight,
-  Mail,
   ChevronDown,
   Zap,
   Target,
@@ -395,6 +394,8 @@ function FAQ() {
 
 /* ─── CTA / Contact ─── */
 
+import { ContactForm } from "./components/ContactForm";
+
 function Contact() {
   return (
     <section id="kontakt" className="py-24 bg-light2">
@@ -425,23 +426,12 @@ function Contact() {
               </div>
             ))}
           </div>
-          <a
-            href="mailto:seb@stianpieper.de?subject=KI-Beratung%20Erstgespräch"
-            className="inline-flex items-center justify-center gap-2 font-heading text-sm font-bold bg-accent text-black px-8 py-4 rounded-lg hover:bg-accent-hover hover:shadow-[0_4px_30px_rgba(163,230,53,0.4)] transition-all"
-          >
-            <Mail className="w-4 h-4" strokeWidth={2} />
-            Erstgespräch anfragen
-          </a>
+          <ContactForm
+            reasons={["Erstgespräch", "Workshop", "Strategie-Beratung", "AI Agents", "Sonstiges"]}
+          />
         </div>
 
         <div className="mt-8 flex items-center justify-center gap-6">
-          <a
-            href="mailto:seb@stianpieper.de"
-            className="flex items-center gap-2 text-text2 hover:text-black transition-colors"
-          >
-            <Mail className="w-4 h-4" strokeWidth={1.5} />
-            <span className="font-body text-sm">seb@stianpieper.de</span>
-          </a>
           <a
             href="https://www.linkedin.com/in/sebastian-pieper-selb/"
             target="_blank"
@@ -467,8 +457,8 @@ function Footer() {
           <span className="font-heading text-sm font-bold tracking-[2px] text-black">SP</span>
           <span className="font-body text-xs text-text3">&copy; {new Date().getFullYear()} Sebastian Pieper</span>
         </div>
-        <a href="mailto:seb@stianpieper.de" className="font-body text-xs text-text3 hover:text-text2 transition-colors">
-          seb@stianpieper.de
+        <a href="#kontakt" className="font-body text-xs text-text3 hover:text-text2 transition-colors">
+          Kontakt
         </a>
       </div>
     </footer>
