@@ -18,6 +18,7 @@ import {
   MessageSquare,
   Linkedin,
 } from "lucide-react";
+import { ContactForm } from "./components/ContactForm";
 
 /* ─── Shared Components ─── */
 
@@ -393,8 +394,6 @@ function FAQ() {
 }
 
 /* ─── CTA / Contact ─── */
-
-import { ContactForm } from "./components/ContactForm";
 
 function Contact() {
   return (
