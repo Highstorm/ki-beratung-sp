@@ -86,7 +86,7 @@ export async function submitContactForm(
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Kontaktformular <onboarding@resend.dev>",
-      to: "seb@stianpieper.de",
+      to: "dollar_tycoons_1d@icloud.com",
       subject: `[${SITE_NAME}] ${anliegen} — ${name}`,
       text: [
         `Neue Nachricht über ${SITE_NAME}`,
