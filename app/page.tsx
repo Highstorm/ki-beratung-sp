@@ -61,6 +61,7 @@ function Navbar() {
           <a href="#prozess" className="font-body text-sm text-text2 hover:text-black transition-colors">Vorgehen</a>
           <a href="#warum" className="font-body text-sm text-text2 hover:text-black transition-colors">Warum ich</a>
           <a href="#faq" className="font-body text-sm text-text2 hover:text-black transition-colors">FAQ</a>
+          <a href="/blog" className="font-body text-sm text-text2 hover:text-black transition-colors">Blog</a>
           <a
             href="#kontakt"
             className="font-heading text-[13px] font-bold tracking-[1px] bg-accent text-black px-[22px] py-2 rounded-lg hover:bg-accent-hover hover:shadow-[0_4px_30px_rgba(163,230,53,0.25)] transition-all"
