@@ -1,11 +1,11 @@
 ---
 title: "KI im Mittelstand: Wo anfangen?"
 description: "Ein praktischer Leitfaden für den Einstieg in Künstliche Intelligenz — speziell für mittelständische Unternehmen."
-date: "2025-03-25"
+date: "2026-03-24"
 tags: ["KI", "Mittelstand", "Strategie"]
 ---
 
-Die Frage ist nicht mehr *ob* KI relevant ist, sondern **wo man anfängt**. Gerade im Mittelstand — wo Ressourcen begrenzt und die Anforderungen hoch sind — braucht es einen pragmatischen Ansatz.
+Die Frage ist nicht mehr _ob_ KI relevant ist, sondern **wo man anfängt**. Gerade im Mittelstand — wo Ressourcen begrenzt und die Anforderungen hoch sind — braucht es einen pragmatischen Ansatz.
 
 ## Die häufigsten Fehler beim KI-Einstieg
 
@@ -25,7 +25,7 @@ Der effektivste Ansatz für den Mittelstand:
 
 ## DSGVO? Kein Hindernis.
 
-Ein häufiges Bedenken: *"Dürfen wir das überhaupt?"* Die kurze Antwort: **Ja** — wenn man es richtig macht.
+Ein häufiges Bedenken: _"Dürfen wir das überhaupt?"_ Die kurze Antwort: **Ja** — wenn man es richtig macht.
 
 - Deutsche/EU-Server nutzen
 - Keine personenbezogenen Daten an US-Dienste senden

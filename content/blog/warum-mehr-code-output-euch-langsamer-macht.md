@@ -1,7 +1,7 @@
 ---
 title: "Warum mehr Code-Output euch langsamer macht"
 description: "Der KI-Coding-Hype und das Bottleneck-Problem: "
-date: "2025-03-25"
+date: "2026-03-25"
 tags: ["KI", "Automation", "Code"]
 ---
 
