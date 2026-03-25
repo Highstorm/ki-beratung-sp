@@ -6,7 +6,7 @@ tags: ["KI", "Automation", "Code"]
 ---
 
 Es ist Dienstagmorgen. Ich sitze in einem Workshop mit dem CTO eines regionalen, mittelständischen Softwareunternehmens. Er hat gerade eine Folie aufgemacht: _„KI-Coding-Assistenten – 40% mehr Output.”._
-Seine Worte*: “Das wird unsere Velocity transformieren."*
+Seine Worte*: “Das wird unsere Velocity durch die Decke jagen."*
 
 Ich kenne diesen Moment. Ich habe ihn oft erlebt – als Entwickler, als Product Owner, als Berater. Und jedes Mal denke ich dasselbe:
 
@@ -158,4 +158,4 @@ Der Wettbewerbsvorteil geht nicht an das Team, das am schnellsten Code schreibt.
 
 ---
 
-_Du willst wissen, wo das Bottleneck in deiner Delivery-Pipeline liegt? [Dann lass uns reden.](https://ki-beratung.vercel.com/)_
+_Du willst wissen, wo das Bottleneck in deiner Delivery-Pipeline liegt? [Dann lass uns reden.](https://ki-beratung.vercel.app/)_
