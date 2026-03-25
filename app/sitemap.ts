@@ -4,7 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts().map((post) => ({
     url: `https://ki-beratung.vercel.app/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: post.date ? new Date(post.date) : new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
