@@ -1,4 +1,9 @@
-# Der KI-Coding-Hype und das Bottleneck-Problem:
+---
+title: "Warum mehr Code-Output euch langsamer macht"
+description: "Der KI-Coding-Hype und das Bottleneck-Problem: "
+date: "2025-03-25"
+tags: ["KI", "Automation", "Code"]
+---
 
 Es ist Dienstagmorgen. Ich sitze in einem Workshop mit dem CTO eines regionalen, mittelständischen Softwareunternehmens. Er hat gerade eine Folie aufgemacht: _„KI-Coding-Assistenten – 40% mehr Output.”._
 Seine Worte*: “Das wird unsere Velocity transformieren."*
